@@ -1,0 +1,17 @@
+#ランダムな整数を利用するために、randomモジュールをインポート
+import random
+
+#　変数varに6～15までのランダムな整数を代入する
+var = random.randint(6,15)
+#varの値が3の倍数の場合「Fizz」を出力する
+if var ==6 or var == 9 or var == 12:
+  print("Fizz")
+##varの値が5の倍数の場合「Buzz」を出力する
+elif var == 10:
+  print("Buzz")
+##varの値が3と5の倍数の場合「FizzBuzz」を出力する
+elif var == 15:
+  print("FizzBuzz")
+#varの値が上記以外の整数の場合変数varの値を出力
+else:
+  print(var)
