@@ -1,0 +1,13 @@
+list = ["水","金","地","火","木","土","天","海","冥"]
+#for文を使って出力
+for planet in list:
+  print(planet)
+
+#while文を使って出力
+i = 0
+
+
+while  list[i]  != "冥":
+    print(list[i])
+    i += 1
+print("冥")
