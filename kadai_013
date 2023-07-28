@@ -1,16 +1,6 @@
-# 購入した場合に正を返す変数
-purchased = True
-
-# 戻り値を返す関数を定義する
-def add_two_arguments(price,tax):
-   if (purchased):
-       return True
-   else:
-       return False
-
-# 戻り値を返す関数を条件式に使う（Trueであれば処理が実行される）
-if ( add_two_arguments(1200,1.10)):
-    price = 1200
-    tax = 1.10
+def add_two_arguments(price, tax):
     total = price * tax
-    print(f"{total}(税10%)円")
+    return total
+
+calculation_result = add_two_arguments(1200, 1.10)
+print(f"{calculation_result}(税10%)円")
